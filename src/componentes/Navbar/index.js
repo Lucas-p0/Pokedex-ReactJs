@@ -1,12 +1,10 @@
 
 
-const Navbar = () =>{
+const Navbar = () => {
     return (
-        <div>
-            <nav>
-                Pokeapi
-            </nav>
-        </div>
-    )
+        <nav>
+            <img src="img/pokedex_logo.png" alt="Logo pokedex" />
+        </nav>
+    );
 }
 export default Navbar
