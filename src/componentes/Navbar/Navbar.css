@@ -1,0 +1,9 @@
+.navbar {
+    background-color: #2d2e9a;
+    text-align: center;
+}
+
+.navbar img {
+    max-width: 100%;
+    width: 160px;
+}
