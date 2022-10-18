@@ -1,8 +1,8 @@
-
+import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className='navbar'>
             <img src="img/pokedex_logo.png" alt="Logo pokedex" />
         </nav>
     );
