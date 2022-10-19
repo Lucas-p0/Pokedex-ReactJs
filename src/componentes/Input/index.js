@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import './Input.css';
 
-const Input = () => {
-    const [buscar, setBuscar] = useState('')
-    const aoDigitar = (evento) => {
-        buscar = evento.terget.value
+const Searchbar=()=>{
+    const [search, setSearch] = useState('dito')
+
+    const onChangeHandler = (e) => {
+        console.log("pokemon:", e.target.value)
+        setSearch(e.target.value)
+        
     }
-    return (
-
-        <div className='input'>
-            <input onChange={aoDigitar} placeholder='Buscar Pokemon' />
+    return(
+        <div>
+            <input placeholder="Bucar pokemon" onChange={onChangeHandler} />
+            {search}
         </div>
-
     )
 }
-export default Input
+
+export default Searchbar;
