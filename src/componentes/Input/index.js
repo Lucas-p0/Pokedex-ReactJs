@@ -14,7 +14,7 @@ const Searchbar=()=>{
         console.log("Pokemon:", search)
     }
     return(
-        <div>
+        <div className="input-container">
             <input placeholder="Bucar pokemon" onChange={onChangeHandler} />
             <button onClick={onButtonCliclHandler} > Buscar</button>
 
