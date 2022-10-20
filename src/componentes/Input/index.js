@@ -9,10 +9,15 @@ const Searchbar=()=>{
         setSearch(e.target.value)
         
     }
+
+    const onButtonCliclHandler =() => {
+        console.log("Pokemon:", search)
+    }
     return(
         <div>
             <input placeholder="Bucar pokemon" onChange={onChangeHandler} />
-            {search}
+            <button onClick={onButtonCliclHandler} > Buscar</button>
+
         </div>
     )
 }
