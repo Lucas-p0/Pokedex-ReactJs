@@ -1,12 +1,21 @@
-import Input from './componentes/Input';
-import Navbar from './componentes/Navbar'
+import React from "react";
+import Navbar from './componentes/Navbar';
 import './componentes/Navbar/Navbar.css';
+import Searchbar from './componentes/SearchBar';
+import {searchPokemon} from "./ api";
+
 
 function App() {
+ 
+  const onSearchHandler = async(pokemon)=>{
+    const result = await searchPokemon(pokemon)
+    console.log(result)
+ }
+
   return (
     <div>
       <Navbar />
-      <Input />
+      <Searchbar onSearch={onSearchHandler}/>
     </div>
 
   );

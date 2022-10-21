@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './Input.css';
 
-const Searchbar=()=>{
+const Searchbar=(props)=>{
+    const {onSearch} = props;
     const [search, setSearch] = useState('dito')
 
     const onChangeHandler = (e) => {
@@ -11,6 +12,8 @@ const Searchbar=()=>{
     }
 
     const onButtonCliclHandler =() => {
+
+        onSearch(search)
         console.log("Pokemon:", search)
     }
     return(
