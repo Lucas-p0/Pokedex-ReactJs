@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { searchPokemon } from "/Projetos/reactJs/Pokedex/src/api";
+import { searchPokemon } from "/Projetos/Pokedex-ReactJs/src/api";
 import './Input.css';
 
 const Searchbar = () => {
